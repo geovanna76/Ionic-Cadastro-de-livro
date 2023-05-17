@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cadastro de livros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label position="floating">Titulo do livro:</ion-label>
+    <ion-input [(ngModel)]="titulo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Autor:</ion-label>
+    <ion-input [(ngModel)]="autor"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Personagem favorito:</ion-label>
+    <ion-input [(ngModel)]="personagem"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Qtde paginas:</ion-label>
+    <ion-input [(ngModel)]="paginas"></ion-input>
+  </ion-item>
+
+<ion-list>
+  <br>
+  <ion-item >
+    <ion-select placeholder="Selecione a categoria" [(ngModel)]="categoria">
+      <ion-select-option value="romance">Romance</ion-select-option>
+      <ion-select-option value="scifi">sci-fi</ion-select-option>
+      <ion-select-option value="poesia">Poesia</ion-select-option>
+      <ion-select-option value="conto">Contos</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+  <ion-button expand="block" fill="outline"
+  (click)="abrirPaginaTeste()">Proximo</ion-button>
+
+
+</ion-content>
+
+
+
+

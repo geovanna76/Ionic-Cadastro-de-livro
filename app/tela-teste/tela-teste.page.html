@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Confira os dados</ion-title>
+    <ion-button slot="start" defautHref="home">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>Titulo</ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>{{titulo}}</ion-label>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>Autor</ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>{{autor}}</ion-label>
+    </ion-item>
+  </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Personagem favorito</ion-label>
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>{{personagem}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Qtde paginas</ion-label>
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>{{paginas}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Categoria</ion-label>
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>{{categoria}}</ion-label>
+      </ion-item>
+    </ion-item-group>
+
+
+<!-- vai terceira tela agradecendo-->
+<ion-button expand="block" fill="outline"
+(click)="confirmoCadastro()">Tudo Ok!</ion-button>
+
+<!-- vai terceira tela agradecendo-->
+<ion-button expand="block" fill="outline"
+(click)="voltar()">voltar!</ion-button>
+
+
+</ion-content>
