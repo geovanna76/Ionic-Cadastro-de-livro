@@ -6,4 +6,7 @@ Projeto Mobile sobre cadastro de livro, com 3 telas:
   <li>Cadastro</li>
   <li>Agradecimento</li>
  <ul>
+
+ # Linguagens
+ Typescript
     
